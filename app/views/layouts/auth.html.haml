@@ -4,7 +4,9 @@
 - content_for :content do
   .container-alt
     .logo-container
-      %h1 Mastodon Casino
+      %h1
+        = link_to root_path do
+          Mastodon Casino
 
     .form-container
       = render 'flashes'
