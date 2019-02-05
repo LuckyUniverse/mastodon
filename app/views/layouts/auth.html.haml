@@ -1,15 +1,11 @@
 - content_for :header_tags do
   = javascript_pack_tag 'public', integrity: true, crossorigin: 'anonymous'
-
 - content_for :content do
   .container-alt
     .logo-container
       %h1
         =& Mastodon Casino
-
     .form-container
       = render 'flashes'
-
       = yield
-
 = render template: 'layouts/application'
