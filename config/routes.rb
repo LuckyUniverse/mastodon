@@ -370,6 +370,10 @@ Rails.application.routes.draw do
       get '/search', to: 'search#index', as: :search
     end
 
+    namespace :v3custom do
+      post "/creatuser" => "createuser#create", :as => :create_forum
+    end
+
     namespace :web do
       resource :settings, only: [:update]
       resource :embed, only: [:create]
