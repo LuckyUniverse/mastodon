@@ -1,7 +1,5 @@
 class Api::Casino::CreateUserController
 
-  respond_to :json
-
   def index
 
     render text: 'user saved'
