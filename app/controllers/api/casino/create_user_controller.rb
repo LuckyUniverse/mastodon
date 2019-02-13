@@ -13,7 +13,7 @@ class Api::Casino::CreateUserController < Api::BaseController
       @user.account      = account
 
       if @user.save 
-        render json: {"success":true, "user", @user}
+        render json: {"success":true, "user":@user}
       else
         render json: {"success":false, "error": @user.errors.full_messages}
       end
