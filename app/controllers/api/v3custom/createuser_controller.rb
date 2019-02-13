@@ -1,7 +1,10 @@
 class Api::V3Custom::SearchController < Api::BaseController
   def index
 
-    user = User.new(email: email, password: SecureRandom.hex, account_attributes: { username: username })
-      if user.save
+    @email = params[:email]
+    @password = params[:password]
+    @username = params[:username]
+    @user = User.new(email: @email, password: @email, account_attributes: { username: @username })
+    render json: @user
   end
 end
