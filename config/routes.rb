@@ -370,7 +370,7 @@ Rails.application.routes.draw do
       get '/search', to: 'search#index', as: :search
     end
 
-    namespace :v3custom do
+    namespace :casino do
       post "/creat_user" => "create_user#index"
     end
 
