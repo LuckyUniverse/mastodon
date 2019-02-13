@@ -1,6 +1,6 @@
 class Api::Casino::CreateUserController < Api::BaseController
+  
   def index
-
     @email = params[:email]
     @password = params[:password]
     @username = params[:username]
