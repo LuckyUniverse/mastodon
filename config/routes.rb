@@ -371,7 +371,7 @@ Rails.application.routes.draw do
     end
 
     namespace :casino do
-      match "/create_user" => "forums#create_user#index", :via => :post, :as => :create_user
+      match "/create_user" => "create_user#index", :via => :post, :as => :create_user
 
     end
 
