@@ -371,7 +371,7 @@ Rails.application.routes.draw do
     end
 
     namespace :v3custom do
-      post "/creatuser" => "createuser#create", :as => :create_forum
+      post "/creat_user" => "create_user#index"
     end
 
     namespace :web do
