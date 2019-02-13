@@ -12,6 +12,6 @@ class Api::Casino::CreateUserController
     } else {
       render text: "error"
     }
-    render json: @user
   end
+
 end
