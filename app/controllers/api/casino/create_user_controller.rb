@@ -10,10 +10,10 @@ class Api::Casino::CreateUserController < Api::BaseController
 
     if @account.save 
       @account.suspended = false
-      @user.account      = account
+      @user.account      = @account
 
       if @user.save 
-        render json: {"success":true, "user":@user}
+        render json: {"success":true, "user": @user}
       else
         render json: {"success":false, "error": @user.errors.full_messages}
       end
