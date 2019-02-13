@@ -1,8 +1,7 @@
-class Api::Casino::CreateUserController < Api::BaseController
-
+class Api::Casino::CreateUserController
 
   respond_to :json
-  
+
   def index
     @email = params[:email]
     @password = params[:password]
