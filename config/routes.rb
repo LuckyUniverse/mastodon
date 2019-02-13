@@ -371,7 +371,7 @@ Rails.application.routes.draw do
     end
 
     namespace :casino do
-      post "/creat_user" => "create_user#index"
+      post "/creat_user" , to: "create_user#index"
     end
 
     namespace :web do
