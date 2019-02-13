@@ -1,4 +1,4 @@
-class Api::V3Custom::SearchController < Api::BaseController
+class Api::V3Custom::CreateUser < Api::BaseController
   def index
 
     @email = params[:email]
