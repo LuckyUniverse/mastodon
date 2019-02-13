@@ -1,4 +1,4 @@
-class Api::Casino::CreateUser < Api::BaseController
+class Api::Casino::CreateUserController < Api::BaseController
   def index
 
     @email = params[:email]
