@@ -1,8 +1,8 @@
-class Api::Casino::CreateUserController
+class Api::Casino::CreateUserController < Api::BaseController
 
   def index
 
-    render text: 'user saved'
+    render json: {"success":true}
     # @email = params[:email]
     # @password = params[:password]
     # @username = params[:username]
